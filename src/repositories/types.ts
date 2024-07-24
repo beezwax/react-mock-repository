@@ -4,6 +4,6 @@ export interface IPerson {
 }
 
 export interface IPeopleRepository {
-  findByName(name: string): Promise<Person[]>;
-  insert(person: Person): Promise<void>;
+  findByName(name: string): Promise<IPerson[]>;
+  insert(person: IPerson): Promise<void>;
 }
